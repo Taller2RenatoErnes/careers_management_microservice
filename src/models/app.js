@@ -4,7 +4,8 @@ const morgan = require("morgan");
 const app = express();
 
 
-const careersRouter = require ("./routes/careersRoutes");
+const careersRouter = require ("../routes/careersRoutes");
+
 
 app.use(express.json());
 
