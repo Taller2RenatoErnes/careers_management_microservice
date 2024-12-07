@@ -6,8 +6,8 @@ const subjectSchema = new mongoose.Schema({
     department: String,
     credits : Number,
     semester : Number,
-    career_id : mongoose.Schema.Types.ObjectId,
-    prerequisites : [],
+    career_id : { type: mongoose.Schema.Types.ObjectId, ref: "Career" },
+    prerequisites : [{ type: mongoose.Schema.Types.ObjectId, ref: "Subject" }],
   });
 
 const Subject = mongoose.model('Subject', subjectSchema);
