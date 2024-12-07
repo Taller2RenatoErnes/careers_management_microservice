@@ -1,13 +1,12 @@
 const mongoose = require('mongoose');
 
 const subjectSchema = new mongoose.Schema({
-    id: Number,
+    code: String,
     name: String,
     department: String,
     credits : Number,
     semester : Number,
-    code : String,
-    career_id : String,
+    career_id : mongoose.Schema.Types.ObjectId,
     prerequisites : [],
   });
 
