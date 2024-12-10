@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+
+message Subject{
+    string _id = 1;
+    string code = 2;
+    string name = 3;
+    string department = 4;
+    int32 credits = 5;
+    int32 semester = 6;
+    string career_id = 7;
+    repeated string prerequisites = 8;
+
+}
+
+message Prerequisite{
+    string _id = 1;
+    repeated string prerequisites = 8;
+}
+message PrerequisiteObject{
+    string _id = 1;
+    string code = 2;
+    repeated string prerequisites = 8;
+}
+
+service subject {
+  rpc subjects (google.protobuf.Empty) returns (AllSubjectsResponse) {}
+  rpc prerequisites_objects (Subject) returns (PreRequisiteObjectsResponse) {}
+  rpc prerequisites_map (Subject) returns (PrerequisitesMapResponse) {}
+}
+
+
+
+message AllSubjectsResponse {
+  repeated Subject subjects = 1;
+}
+message PrerequisitesMapResponse{
+  repeated Prerequisite subjects = 1;
+}
+message PreRequisiteObjectsResponse{
+  repeated PrerequisiteObject subjects = 1;
+}
+
+message SubjectResponse {
+  Subject subjects = 1;
+}
