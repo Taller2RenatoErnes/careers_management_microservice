@@ -11,24 +11,29 @@ message Subject{
     int32 credits = 5;
     int32 semester = 6;
     string career_id = 7;
-    repeated string prerequisites = 8;
-
-}
-
-message Prerequisite{
-    string _id = 1;
-    repeated string prerequisites = 8;
 }
 message PrerequisiteObject{
-    string _id = 1;
-    string code = 2;
-    repeated string prerequisites = 8;
+  string _id = 1;
+  string subject_id = 2;
+  string preSubject_id = 3;
 }
+
+message PrerequisiteMap{
+  string subject_id = 1;
+  repeated string prerequisites = 3;
+}
+
+message PostrequisiteMap{
+  string subject_id = 1;
+  repeated string postrequisites = 3;
+}
+
 
 service subject {
   rpc subjects (google.protobuf.Empty) returns (AllSubjectsResponse) {}
-  rpc prerequisites_objects (Subject) returns (PreRequisiteObjectsResponse) {}
-  rpc prerequisites_map (Subject) returns (PrerequisitesMapResponse) {}
+  rpc prerequisites_objects (Subject) returns (PrerequisiteObjectsResponse) {}
+  rpc prerequisites_map (Subject) returns (PrerequisiteMapResponse) {}
+  rpc postrequisites_map (Subject) returns (PostrequisitesMapResponse) {}
 }
 
 
@@ -36,13 +41,14 @@ service subject {
 message AllSubjectsResponse {
   repeated Subject subjects = 1;
 }
-message PrerequisitesMapResponse{
-  repeated Prerequisite subjects = 1;
+
+message PrerequisiteObjectsResponse{
+  repeated PrerequisiteObject prerequisites = 1;
 }
-message PreRequisiteObjectsResponse{
-  repeated PrerequisiteObject subjects = 1;
+message PrerequisiteMapResponse{
+  repeated PrerequisiteMap prerequisites = 1;
+}
+message PostrequisitesMapResponse{
+  repeated PostrequisiteMap postrequisites = 1;
 }
 
-message SubjectResponse {
-  Subject subjects = 1;
-}
