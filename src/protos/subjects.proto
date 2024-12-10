@@ -19,12 +19,12 @@ message PrerequisiteObject{
 }
 
 message PrerequisiteMap{
-  string subject_id = 1;
+  string _id = 1;
   repeated string prerequisites = 3;
 }
 
 message PostrequisiteMap{
-  string subject_id = 1;
+  string _id = 1;
   repeated string postrequisites = 3;
 }
 

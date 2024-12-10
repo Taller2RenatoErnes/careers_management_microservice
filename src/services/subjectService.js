@@ -70,7 +70,6 @@ const postrequisites_map = async (career_id) => {
       if (!subjects){
           throw new Error('No se encontraron materias para la carrera');
       }
-      console.log(subjects);
       const subjectsObjects = [];
       for (const subject of subjects){
         const postrequisites = await SubjectRelationship.find({ preSubject_id: new mongoose.Types.ObjectId(subject._id)});;
