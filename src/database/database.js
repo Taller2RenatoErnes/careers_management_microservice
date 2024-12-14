@@ -1,5 +1,6 @@
 require('dotenv').config()
 const db = require('mongoose')    
+const careerSeeders = require('../seed/careerSeeder')
 
 
 const dbconexion = async () => {

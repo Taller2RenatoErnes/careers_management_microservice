@@ -3,6 +3,8 @@ const grpc = require('@grpc/grpc-js');
 
 const careers = async (call, callback) => {
   try {
+    const data = call.request;
+    console.log('Datos:', data);
     const careers = await careerService.getCareers();
       if (careers.length === 0) {
           return callback({

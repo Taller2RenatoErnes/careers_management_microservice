@@ -3,7 +3,7 @@ const morgan = require("morgan");
 const db = require("./database/database");
 
 const startGrpcServer = require("./grpcClient");
-
+const RabbitService = require("./services/rabbitService");
 const careersRouter = require ("./routes/careersRoutes");
 const subjectsRouter = require ("./routes/subjectsRoutes");
 
@@ -19,6 +19,8 @@ app.use(express.urlencoded({ extended: false }));
 // GRPC
 
 startGrpcServer();
+const rabbitService = new RabbitService();
+rabbitService.setupRabbitMQ();
 
 
 // HTTP
