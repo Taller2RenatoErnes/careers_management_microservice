@@ -1,14 +1,43 @@
 const progressService = require('../services/progressService');
+const grpc = require('@grpc/grpc-js');
 
+const progress = async (call, callback) => {
+    try{
+    
+        const user_id = call.request.user_id;
+        const progress = await progressService.getProgress(user_id);
 
-const getProgress = async (req, res) => {
-    try {
-        const progress = await progressService.getProgress(req.params.id);
-        return res.status(200).json(progress)
-    } catch (err) {
-        console.error('Error al obtener datos:', err);
-        res.status(500).json({ message: 'Error al obtener los datos' });
+        if (!progress){
+            return callback({
+                code: grpc.status.NOT_FOUND,
+                details: 'No se encontraron requisitos para la materia'
+            });
+        }
+        callback(null, {progress});
+
+    }catch{
+        callback({
+            code: grpc.status.INTERNAL,
+            details: 'Error al obtener las materias controller' 
+            
+        });
     }
-}
+};
 
-module.exports = { getProgress };   
+const updateProgress = async (data) => {
+    try{
+        const user_id = data.user_id;
+        const subject_id = data.subject_id;
+        const progress = await progressService.updateProgress(user_id, subject_id);
+
+        if (!progress){
+            console.log('No se logro añadir el progreso');
+        }
+        console.log('Progreso añadido');
+
+    }catch(err){
+        console.log('Error al añadir el progreso', err);
+    }
+};
+
+module.exports = { progress, updateProgress };   
