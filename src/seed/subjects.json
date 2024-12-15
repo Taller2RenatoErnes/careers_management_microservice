@@ -1,0 +1,164 @@
+[
+  {
+    "id": 0,
+    "code": "MAT101",
+    "name": "Cálculo I",
+    "department": "Matemáticas",
+    "credits": 6,
+    "semester": 1,
+    "career_id": 0
+  },
+  {
+    "id": 1,
+    "code": "MAT102",
+    "name": "Cálculo II",
+    "department": "Matemáticas",
+    "credits": 6,
+    "semester": 2,
+    "career_id": 0
+  },
+  {
+    "id": 2,
+    "code": "FIS101",
+    "name": "Física I",
+    "department": "Física",
+    "credits": 5,
+    "semester": 1,
+    "career_id": 1
+  },
+  {
+    "id": 3,
+    "code": "FIS102",
+    "name": "Física II",
+    "department": "Física",
+    "credits": 5,
+    "semester": 2,
+    "career_id": 1
+  },
+  {
+    "id": 4,
+    "code": "INF101",
+    "name": "Programación Básica",
+    "department": "Informática",
+    "credits": 5,
+    "semester": 1,
+    "career_id": 2
+  },
+  {
+    "id": 5,
+    "code": "INF102",
+    "name": "Estructuras de Datos",
+    "department": "Informática",
+    "credits": 6,
+    "semester": 2,
+    "career_id": 2
+  },
+  {
+    "id": 6,
+    "code": "INF103",
+    "name": "Análisis de Algoritmos",
+    "department": "Informática",
+    "credits": 6,
+    "semester": 3,
+    "career_id": 3
+  },
+  {
+    "id": 7,
+    "code": "QUI101",
+    "name": "Química General",
+    "department": "Química",
+    "credits": 5,
+    "semester": 1,
+    "career_id": 4
+  },
+  {
+    "id": 8,
+    "code": "QUI102",
+    "name": "Química Orgánica",
+    "department": "Química",
+    "credits": 6,
+    "semester": 2,
+    "career_id": 4
+  },
+  {
+    "id": 9,
+    "code": "ELE101",
+    "name": "Electromagnetismo",
+    "department": "Electricidad",
+    "credits": 6,
+    "semester": 2,
+    "career_id": 5
+  },
+  {
+    "id": 10,
+    "code": "ELE102",
+    "name": "Circuitos Eléctricos",
+    "department": "Electricidad",
+    "credits": 6,
+    "semester": 3,
+    "career_id": 5
+  },
+  {
+    "id": 11,
+    "code": "MAT103",
+    "name": "Cálculo III",
+    "department": "Matemáticas",
+    "credits": 6,
+    "semester": 3,
+    "career_id": 6
+  },
+  {
+    "id": 12,
+    "code": "FIS201",
+    "name": "Mecánica",
+    "department": "Física",
+    "credits": 6,
+    "semester": 3,
+    "career_id": 6
+  },
+  {
+    "id": 13,
+    "code": "INF201",
+    "name": "Bases de Datos",
+    "department": "Informática",
+    "credits": 6,
+    "semester": 4,
+    "career_id": 7
+  },
+  {
+    "id": 14,
+    "code": "INF202",
+    "name": "Redes de Computadoras",
+    "department": "Informática",
+    "credits": 6,
+    "semester": 4,
+    "career_id": 7
+  },
+  {
+    "id": 15,
+    "code": "QUI201",
+    "name": "Química Inorgánica",
+    "department": "Química",
+    "credits": 6,
+    "semester": 3,
+    "career_id": 8
+  },
+  {
+    "id": 16,
+    "code": "ELE201",
+    "name": "Electrónica Analógica",
+    "department": "Electricidad",
+    "credits": 6,
+    "semester": 4,
+    "career_id": 8
+  },
+  {
+    "id": 17,
+    "code": "MAT101",
+    "name": "Intro Cálculo ",
+    "department": "Matemáticas",
+    "credits": 6,
+    "semester": 1,
+    "career_id": 0
+  }
+]

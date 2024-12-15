@@ -1,0 +1,50 @@
+[
+  {
+    "id": 0,
+    "name": "Ingeniería Civil en Computación e Informática",
+    "description": "Carrera enfocada en el desarrollo de software y sistemas computacionales.",
+    "duration": 10
+  },
+  {
+    "id": 1,
+    "name": "Ingeniería Industrial",
+    "description": "Carrera orientada a la optimización de procesos y gestión de recursos en diferentes sectores industriales.",
+    "duration": 8
+  },
+  {
+    "id": 2,
+    "name": "Ingeniería en Mecatrónica",
+    "description": "Carrera que integra la ingeniería mecánica, electrónica y de control para desarrollar sistemas automatizados.",
+    "duration": 9
+  },
+  {
+    "id": 3,
+    "name": "Ingeniería en Electrónica",
+    "description": "Carrera centrada en el diseño y desarrollo de circuitos electrónicos, sistemas de control y comunicaciones.",
+    "duration": 8
+  },
+  {
+    "id": 4,
+    "name": "Ingeniería Civil",
+    "description": "Carrera orientada al diseño, construcción y mantenimiento de infraestructuras civiles como edificios, puentes y carreteras.",
+    "duration": 10
+  },
+  {
+    "id": 5,
+    "name": "Ingeniería de Software",
+    "description": "Carrera especializada en el desarrollo de aplicaciones, sistemas y servicios informáticos a gran escala.",
+    "duration": 9
+  },
+  {
+    "id": 6,
+    "name": "Ingeniería en Telecomunicaciones",
+    "description": "Carrera que abarca el diseño y gestión de sistemas de comunicación, tanto a nivel de hardware como software.",
+    "duration": 8
+  },
+  {
+    "id": 7,
+    "name": "Ingeniería en Energías Renovables",
+    "description": "Carrera enfocada en el aprovechamiento de fuentes de energía sostenibles y el desarrollo de tecnologías limpias.",
+    "duration": 8
+  }
+]

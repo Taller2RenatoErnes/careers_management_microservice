@@ -1,0 +1,26 @@
+[
+  {
+      "subject_id": 1,
+      "preSubject_id": 0
+  },
+  {
+      "subject_id": 1,
+      "preSubject_id": 17 
+  },
+  {
+      "subject_id": 3,
+      "preSubject_id": 2
+  },
+  {
+      "subject_id": 4,
+      "preSubject_id": 3
+  },
+  {
+      "subject_id": 5,
+      "preSubject_id": null
+  },
+  {
+      "subject_id": 6,
+      "preSubject_id": 5
+  }
+]
