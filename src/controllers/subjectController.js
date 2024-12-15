@@ -24,7 +24,7 @@ const subjects = async (call, callback) => {
 
 const prerequisites_objects = async (call, callback) => {
     try{
-        const subjectId = call.request._id;
+        const subjectId = call.request.id;
         const prerequisites = await subjectService.getPrerequisites(subjectId);
         if (!prerequisites){
             return callback({
@@ -51,8 +51,8 @@ const prerequisites_objects = async (call, callback) => {
 const prerequisites_map = async (call, callback) => {
     try{
         const career_id = call.request.career_id;
-
         const prerequisites = await subjectService.prerequisites_map(career_id);
+
         if (!prerequisites){
             return callback({
                 code: grpc.status.NOT_FOUND,
@@ -71,7 +71,7 @@ const prerequisites_map = async (call, callback) => {
 };
 const postrequisites_map = async (call, callback) => {
     try{
-        const career_id = call.request._id;
+        const career_id = call.request.career_id;
         const postrequisites = await subjectService.postrequisites_map(career_id);
         if (!postrequisites){
             return callback({
