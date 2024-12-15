@@ -10,14 +10,11 @@ const {
     prerequisites_map,
     postrequisites_map,
 } = require("./controllers/subjectController");
-const {
-    progress
-} = require("./controllers/progressController");
 
 const PROTO_PATHS = {
     careers: path.join(__dirname, './protos/careers.proto'),
     subjects: path.join(__dirname, './protos/subjects.proto'),
-    progress: path.join(__dirname, './protos/progress.proto'),
+    
   };
 var protoLoader = require('@grpc/proto-loader');
 var grpc = require('@grpc/grpc-js');
@@ -28,8 +25,6 @@ var careersProto = grpc.loadPackageDefinition(careerspackageDefinition);
 var subjectpackageDefinition = protoLoader.loadSync(PROTO_PATHS.subjects,{keepCase: true,});
 var subjectProto = grpc.loadPackageDefinition(subjectpackageDefinition);
 
-var progresspackageDefinition = protoLoader.loadSync(PROTO_PATHS.progress,{keepCase: true,});
-var progressProto = grpc.loadPackageDefinition(progresspackageDefinition);
 
 const startGrpcServer = async () => {
     const PORT = '0.0.0.0:50052';
@@ -53,9 +48,7 @@ const startGrpcServer = async () => {
         postrequisites_map,
         
     });
-    server.addService(progressProto.progress.service, {
-        progress
-    });
+    
 
 };
 
