@@ -21,6 +21,7 @@ Asegúrate de tener instalado lo siguiente:
 
 - **Node.js** (se recomienda la versión 14 o superior).
 - **npm** (Administrador de paquetes de Node, incluido con Node.js).
+- **Docker** (Levantar las bases de datos)
 ## Dependencias
 Este proyecto utiliza las siguientes dependencias:
 
