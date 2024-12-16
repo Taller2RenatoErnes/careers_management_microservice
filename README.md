@@ -5,14 +5,14 @@ Este es un servicio desarrollado en Node.js y Express dedicado a la gestión de 
 
 ## Características
 
-**GRPC:**  framework de comunicación rápida y eficiente que permite invocar funciones remotas como si fueran locales. Utiliza HTTP/2, Protobuf  (mensajes binarios compactos) y soporta comunicación unaria, streaming y bidireccional. Es ideal para microservicios y sistemas distribuidos por su velocidad, escalabilidad y soporte multilenguaje.
-**dotenv:** Biblioteca para cargar variables de entorno desde un archivo .env, facilitando la configuración de aplicaciones sin exponer datos sensibles en el código.
-**Express:** Framework web minimalista y rápido que simplifica la creación de servidores HTTP y el manejo de rutas en aplicaciones Node.js.
-jsonwebtoken: Herramienta para generar y verificar JSON Web Tokens (JWT), útiles para autenticación y autorización de usuarios.
-**mongodb:** Biblioteca oficial para interactuar con MongoDB, una base de datos NoSQL orientada a documentos, desde aplicaciones Node.js.
-**mongoose:** ODM (Object-Document Mapping) para trabajar con MongoDB, proporcionando esquemas, validaciones y herramientas avanzadas para gestionar datos.
-**morgan: **Middleware de registro de solicitudes HTTP, útil para monitorear y depurar la actividad del servidor.
-**Nodemon:** Herramienta de desarrollo que reinicia automáticamente el servidor al detectar cambios en los archivos del proyecto, agilizando el flujo de trabajo.
+- **GRPC:**  framework de comunicación rápida y eficiente que permite invocar funciones remotas como si fueran locales. Utiliza HTTP/2, Protobuf  (mensajes binarios compactos) y soporta comunicación unaria, streaming y bidireccional. Es ideal para microservicios y sistemas distribuidos por su velocidad, escalabilidad y soporte multilenguaje.
+- **dotenv:** Biblioteca para cargar variables de entorno desde un archivo .env, facilitando la configuración de aplicaciones sin exponer datos sensibles en el código.
+- **Express:** Framework web minimalista y rápido que simplifica la creación de servidores HTTP y el manejo de rutas en aplicaciones Node.js.
+- **jsonwebtoken:** Herramienta para generar y verificar JSON Web Tokens (JWT), útiles para autenticación y autorización de usuarios.
+- **mongodb:** Biblioteca oficial para interactuar con MongoDB, una base de datos NoSQL orientada a documentos, desde aplicaciones Node.js.
+- **mongoose:** ODM (Object-Document Mapping) para trabajar con MongoDB, proporcionando esquemas, validaciones y herramientas avanzadas para gestionar datos.
+- **morgan: **Middleware de registro de solicitudes HTTP, útil para monitorear y depurar la actividad del servidor.
+- **Nodemon:** Herramienta de desarrollo que reinicia automáticamente el servidor al detectar cambios en los archivos del proyecto, agilizando el flujo de trabajo.
 
 **Gestión de carreras:** Este microservicio se encarga de gestionar las carreras disponibles en el sistema, ademas de sus materias y los prerequisitos de estas
 ## Requisitos Previos
